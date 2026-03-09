@@ -29,7 +29,7 @@ session = irods_http.authenticate(url_base, username, password)
 # Use the session for all other operations
 response = irods_http.collections.create(session, '/<zone_name>/home/<username>/new_collection')
 
-# Check the resopnse for errors
+# Check the response for errors
 if response['status_code'] != 200:
     # Handle HTTP error.
 
